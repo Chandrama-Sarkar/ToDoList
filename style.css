@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, rgb(238, 229, 108), rgb(252, 192, 63));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+
+}
+form button{
+    color:rgb(252, 192, 63);
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+
+}
+form button:hover{
+    
+   background:rgb(252, 192, 63);
+    color: white;
+    
+}
+.todocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.list{
+    min-width: 25%;
+    list-style:none;
+}
+.todo{
+    margin: 1rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.todo li{
+    flex:1;
+}
+.delete-btn,.complete-btn{
+    background: rgb(252, 85, 63);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+   
+
+    
+}
+.complete-btn{
+    background: green;
+    margin-right:0.1rem;
+}
+.todo-item{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
